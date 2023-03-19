@@ -14,10 +14,10 @@ class Trojkaty {
         if (a == b && b == c && a == c) {
             System.out.println("Trójkąt równoboczny");
         }
-        if ((a * a + b * b) == c * c) {
+        else if ((a * a + b * b) == c * c) {
             System.out.println("Trójkąt prostokatny");
         }
-        if (a == b && a != c) {
+        else if (a == b  || b== c || a == c) {
             System.out.println("Trójkąt rownoramienny");
         } else if (a + b < c || a + c < b || b + c < a) {
             System.out.println("Trojkat nie istnieje");
