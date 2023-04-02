@@ -13,16 +13,8 @@ class Trojkaty {
     public static void jakiTrojkat(float a, float b, float c) {
         if (a == b && b == c && a == c) {
             System.out.println("Trójkąt równoboczny");
-        }
-        else if ((a * a + b * b) == c * c) {
-            System.out.println("Trójkąt prostokatny");
-        }
-        else if (a == b  || b== c || a == c) {
-            System.out.println("Trójkąt rownoramienny");
-        } else if (a + b < c || a + c < b || b + c < a) {
-            System.out.println("Trojkat nie istnieje");
-        } else {
-            System.out.println("Trojkat zwyczajny");
+        } if (a == b || b == c || a == c) {
+            System.out.println("Trójkąt równoramienny");
         }
 
 
