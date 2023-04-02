@@ -21,6 +21,8 @@ class Trojkaty {
             System.out.println("Trójkąt rownoramienny");
         } else if (a + b < c || a + c < b || b + c < a) {
             System.out.println("Trojkat nie istnieje");
+        } else {
+            System.out.println("Trojkat zwyczajny");
         }
 
 
