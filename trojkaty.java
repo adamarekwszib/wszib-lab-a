@@ -16,8 +16,6 @@ class Trojkaty {
         } if (a == b || b == c || a == c) {
             System.out.println("Trójkąt równoramienny");
         }
-
-
     }
 
     /**
