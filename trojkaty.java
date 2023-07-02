@@ -21,7 +21,28 @@ class Trojkaty {
         }
         return jednakowe;
     }
+
+    public static boolean czyProstokatny(float a, float b, float c){
+        if (a * a + b * b == c*c) return true;
+        if (b * b + c * c == a*a) return true;
+        if (a * a + c * c == b*b) return true;
+        return false;
+    }
+    public static boolean czyIstniejeTrojkat(float a, float b, float c){
+        if (a + b <= c) return false;
+        if (a + c <= b) return false;
+        if (b + c <= a) return false;
+        return true;
+    }
+
     public static void jakiTrojkat(float a, float b, float c) {
+        if (!czyIstniejeTrojkat(a, b, c)) {
+            System.out.println("Z podanych długości boków nie da się zbudować trójkąta");
+            System.exit(3);
+        }
+        if (czyProstokatny(a, b, c)) {
+            System.out.println("Trójkąt prostokątny");
+        }
         int jednakoweDlugosci = ileJednakowych(a, b, c); // tutaj zliczamy ile jest jednakowych bokow
         if (jednakoweDlugosci > 1) {
             System.out.println("Trójkąt równoboczny");
