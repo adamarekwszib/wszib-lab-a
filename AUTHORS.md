@@ -1,2 +1,2 @@
-Jakob 'SzybkiCoder'
-Pawel 'ZabójcaBugów'
+Jakob 'SzybkiCoder' Kirchner    
+Pawel 'ZabójcaBugów' Adamarek
